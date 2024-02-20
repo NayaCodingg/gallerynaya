@@ -12,10 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('komentarfoto', function (Blueprint $table) {
-            $table->uuid('ID')->primary();
-            $table->string('FotoID');
-            $table->foreignUuid('UserID');
-            $table->foreign('UserID')->references('ID')->on('user');
+            $table->integer('ID')->primary();
+            $table->integer('FotoID');
+            $table->integer('UserID');
             $table->text('IsiKomentar');
             $table->date('TanggalKomentar');
         });

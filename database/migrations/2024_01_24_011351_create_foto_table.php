@@ -12,15 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('foto', function (Blueprint $table) {
-            $table->uuid('ID')->primary();
+            $table->integer('ID')->primary();
             $table->string('JudulFoto');
             $table->text('DeskripsiFoto');
             $table->date('TanggalUnggah');
             $table->string('LokasiFile');
-            $table->foreignUuid('AlbumID');
-            $table->foreign('AlbumID')->references('ID')->on('album');
-            $table->foreignUuid('UserID');
-            $table->foreign('UserID')->references('ID')->on('user');
+            $table->integer('AlbumID');
+            $table->integer('UserID');
         });
     }
 

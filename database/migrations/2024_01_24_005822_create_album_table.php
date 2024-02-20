@@ -12,12 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('album', function (Blueprint $table) {
-            $table->uuid('ID')->primary();
+            $table->integer('ID')->primary();
             $table->string('NamaAlbum');
             $table->text('Deskripsi');
             $table->date('TanggalDibuat');
-            $table->foreignUuid('UserID');
-            $table->foreign('UserID')->references('ID')->on('user');
+            $table->integer('UserID');
         });
     }
 

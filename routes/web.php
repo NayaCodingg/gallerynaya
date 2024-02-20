@@ -7,6 +7,9 @@ use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\SaveController;
+use App\Http\Controllers\LoginController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,7 @@ use App\Http\Controllers\SaveController;
 |
 */
 
+Route::get('/login', [LoginController::class, 'index'])->name('page.login');
 Route::get('/', [HomeController::class, 'index'])->name('page.home');
 Route::get('/foto', [FotoController::class, 'index'])->name('page.foto');
 Route::get('/album', [AlbumController::class, 'index'])->name('page.album');
