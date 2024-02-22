@@ -1,4 +1,4 @@
-<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:pink;">
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#cfacad;">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -9,7 +9,7 @@
             </a>
 
             <!-- Divider -->
-            <div class="horizontal-line" style="width:25    0px; height:2px; background-color:white;" ></div>
+            <div class="horizontal-line" style="width:25 0px; height:2px; background-color:white;" ></div>
 
             <!-- Nav Item - Home -->
             <li class="nav-item active">
